@@ -1,0 +1,15 @@
+release/ellipse.o
+release/figure.o
+release/main.o
+release/paint.o
+release/paintscene.o
+release/romb.o
+release/square.o
+release/triangle.o
+release/moc_ellipse.o
+release/moc_figure.o
+release/moc_paint.o
+release/moc_paintscene.o
+release/moc_romb.o
+release/moc_square.o
+release/moc_triangle.o
