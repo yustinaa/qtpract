@@ -1,0 +1,13 @@
+4
+Nokia
+Phones
+7500
+Samsung Age
+SmartPhones
+1000
+Xiaomi
+SmartPhones
+1300
+Apple
+SmartPhones
+2500
