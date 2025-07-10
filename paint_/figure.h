@@ -21,6 +21,8 @@ class Figure : public QObject, public QGraphicsItem
     Q_PROPERTY(QPointF endPoint
                    READ endPoint WRITE setEndPoint
                        NOTIFY pointChanged)
+    Q_PROPERTY(QPointF velocity READ velocity WRITE setVelocity) // Скорость движения
+    Q_INTERFACES(QGraphicsItem)
 public:
     explicit Figure(QPointF point, QObject *parent = 0);
     ~Figure();
@@ -35,6 +37,13 @@ public:
     virtual int type() const = 0; // чисто виртуальный метод
     QColor color() const { return figureColor; }
     int penWidth() const { return figurePenWidth; }
+    QPointF velocity() const;
+    void setVelocity(const QPointF &velocity);
+
+    void startAnimation();
+    void stopAnimation();
+    void updatePosition();
+
 protected:
     QColor figureColor = Qt::black;
     int figurePenWidth = 2;
@@ -47,6 +56,9 @@ private:
     QPointF m_endPoint;     // Конечная точка
 
     QRectF boundingRect() const;    // Область, в которой содержится фигура
+    QPointF m_velocity; // Вектор скорости
+    QTimer *m_animationTimer;
+
 
 public slots:
     void updateRomb();     // Слот обновления области, в которой содержится фигура

@@ -32,5 +32,7 @@ private slots:
 void slotTimer();
     void on_saveButton_clicked();
 void on_openButton_clicked();
+    void on_startAnimation_clicked();
+void on_stopAnimatio_clicked();
 };
 #endif // PAINT_H

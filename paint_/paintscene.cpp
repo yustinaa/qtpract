@@ -140,3 +140,20 @@ void paintScene::loadFromFile(const QString &fileName)
 
         file.close();
     }
+    void paintScene::startAllAnimations()
+    {
+        for (QGraphicsItem* item : items()) {
+            if (Figure* figure = dynamic_cast<Figure*>(item)) {
+                figure->startAnimation();
+            }
+        }
+    }
+
+    void paintScene::stopAllAnimations()
+    {
+        for (QGraphicsItem* item : items()) {
+            if (Figure* figure = dynamic_cast<Figure*>(item)) {
+                figure->stopAnimation();
+            }
+        }
+    }

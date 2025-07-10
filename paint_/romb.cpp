@@ -14,6 +14,7 @@ Romb::~Romb()
 // Реализуем метод отрисовки
 void Romb::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
+    painter->setBrush(figureColor);
     painter->setPen(QPen(figureColor, figurePenWidth));
 
     QPolygonF polygon;

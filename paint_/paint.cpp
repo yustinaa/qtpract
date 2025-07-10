@@ -127,3 +127,15 @@ void MainWindow::on_openButton_clicked()
     }
 }
 
+
+void MainWindow::on_startAnimation_clicked()
+{
+    scene->startAllAnimations();
+}
+
+
+void MainWindow::on_stopAnimatio_clicked()
+{
+    scene->stopAllAnimations();
+}
+

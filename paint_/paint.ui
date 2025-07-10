@@ -50,6 +50,32 @@
      <string>load from file</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="startAnimation">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>0</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>start animation</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopAnimatio">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>0</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>stop animation</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

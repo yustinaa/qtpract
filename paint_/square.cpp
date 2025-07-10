@@ -13,6 +13,7 @@ Square::~Square()
 //метод отрисовки
 void Square::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
+    painter->setBrush(figureColor);
     painter->setPen(QPen(figureColor, figurePenWidth));
 
     QRectF rect(endPoint().x() > startPoint().x() ? startPoint().x() : endPoint().x(),

@@ -14,6 +14,7 @@ Ellipse::~Ellipse()
 // Реализуем метод отрисовки
 void Ellipse::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
+    painter->setBrush(figureColor);
     painter->setPen(QPen(figureColor, figurePenWidth));
 
     // Рассчитываем прямоугольник, в который будет вписан эллипс

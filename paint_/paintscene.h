@@ -39,5 +39,9 @@ public:
     void setTypeFigure(FigureType type);
     void saveToFile(const QString &fileName);
     void loadFromFile(const QString &fileName);
+public slots:
+    void startAllAnimations();
+    void stopAllAnimations();
+
 };
 #endif // PAINTSCENE_H
